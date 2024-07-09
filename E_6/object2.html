@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h1>object ......</h1>
+       <script>
+        //crud
+        /*
+        let obj={
+            name:"utsav",
+            add:"delhi",
+            isPartOfJsp:true,
+            
+
+        }
+        //.and []
+            console.log(obj.add)
+        //update,modify (key is avail. thn update else create)
+        obj.name="utsav jha"
+        obj.sal="x"
+        console.log(obj)
+           //delete
+          delete obj.isPartOfJsp
+          console.log('result',obj) 
+          let obj={
+            name:"utsav",
+            add:"delhi",
+            isPartOfJsp:true,
+            joining:2022,
+            totalExp:function(arg)
+            {
+               return arg-this.joining
+            }
+        }
+         //access method
+       console.log(`my total exp is : ${obj.totalExp(2024)}`) 
+      
+
+                        //Object.assign()
+        //static method and create deep copy  and it is useful for assign  the object value
+        let obj={
+            name:"utsav"
+        }
+        //shallow copy (connected with orignal)
+        //let obj2=obj
+        //obj2.name="vicky"
+        //deep copy (not connected with original )
+        let obj2=Object.assign({},obj)
+        console.log(obj==obj2)  //false
+        obj2.name="vicky"
+        console.table(obj)
+        console.log(obj2)  
+        
+
+                
+        let car={
+            color:'red',
+            speed:"125km/h",
+            name:"bmw",
+            price:125
+        }   
+        
+        //with method 
+        //Object.keys() -it is returning the keys in Array 
+        console.log(Object.keys(car)) //['color','speed','name']
+        //Object.value() it is returning the values in Array
+        console.log(Object.values(car))  //['red', '125km/h', 'bmw']
+          //Object.entries)  //it's returing key and value in form of array
+        console.log(Object.entries(car)) //[[name,'bmw'],[price,125],......]
+         */
+
+         //Object.seal()
+         /* let obj={
+            name:"utsav",
+            add:"delhi"
+         }
+
+         obj.name="vicky"
+         delete obj.add
+         obj.isSalried=true
+         console.log(obj) 
+                     //Object.seal()
+         //insert and delete is not possible in Obect.seal() but you can modify
+         let obj2=Object.seal(obj)
+         //update -yes
+         obj2.name="vicky"
+         //delete  -no
+         delete obj2.add
+         //insert  -no
+         obj2.isActive=true
+         console.log(obj2)
+
+         
+            //Object.freeze()  
+         //update,insert,delete is not possible in object.freeze()   
+         let obj={
+            name:"utsav",
+            add:"delhi"
+         } 
+
+         let obj2=Object.freeze(obj)
+         
+         obj2.name="vicky"
+         console.log(obj2)
+
+         */  
+         
+          
+
+
+       </script>
+</body>
+</html>

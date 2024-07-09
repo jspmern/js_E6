@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>scope</h6>
+      <script>
+        //global scope
+       /* let a=8;
+        var b=9;
+        const c=90
+        console.log(a,b,c)
+        function add()
+        {
+        console.log(a,b,c)
+
+        }
+        add()
+        {
+        console.log(a,b,c)
+        }
+
+        //note---
+         x1=90
+         console.log(x1)  
+         */
+
+       //...............block scope......
+        /* {
+            let a=90;
+            const b=78
+            var a1=800
+            console.log(a,b,a1)
+          }
+          //note -- inside block var refer to global 
+          //console.log(a,b)
+          console.log(a1)
+          */
+
+          //...................function scope..........
+          function a()
+          {
+            let a=9;
+            var b=10;
+            const c=11
+            console.log(a,b,c)
+          }
+          a()
+          console.log(a,b,c)
+
+      </script> 
+</body>
+</html>

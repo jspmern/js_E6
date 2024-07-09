@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>object</h1>
+     <script>
+        //literal (create object + assign)
+      /*  let obj={}
+        obj.name="utsav"
+        obj.add="delhi"
+        obj.isSalried=true
+        obj.sal=100
+              //or
+        let obj2={name:"vicky",add:"odisha",isSalried:true}      
+        console.log('obj',obj)
+        console.log('obj2',obj2) 
+
+         //instance 
+         
+         let obj= new Object() //456
+            obj.name="xyz"
+            obj.add='pqr'
+            console.log(obj)
+            let obj3=obj
+            console.log(obj3===obj)  //true
+         let obj2=new Object()  //123
+         obj2.name="xyz"
+         obj2.add='pqr' 
+         console.log(obj==obj2)   //false
+          
+
+
+          //constructor ways
+          function Student(name,add)
+          {
+               //console.log(this)  //this keyword refer to current object
+               this.name=name
+               this.add=add
+          }
+          
+          let emp1=  new Student('utsav','delhi')
+          let emp2=  new Student('vicky','odisha')
+          let emp3=  new Student('kishor','ap')
+          console.table(emp1)
+          console.table(emp2)
+
+          console.table(emp3)
+        
+
+
+       //access
+       let obj={
+        name:"utsav",
+        add:"delhi",
+        cLoc:"blr"
+       } 
+       
+              //1. ways dot 
+       console.log(obj.name)
+       console.log(obj.cLoc)
+              //2. []   --we must have to provide key in the form of string
+        console.log(obj['name'])    
+
+     //diff. b/w dot and []
+     let obj={
+        name:"utsav",
+        add:"delhi",
+        cLoc:"blr"
+       } 
+           //static (dot +[])
+       console.log(obj.add)   //delhi
+       console.log(obj['add'])  //delhi
+           //dynamic  (only [])
+      let key=prompt('Enter the key')
+      console.log(obj.key)  //undefined
+      console.log(obj[key]) //delhi
+      */
+
+      let obj={
+        name:"utsav",
+        add: {
+             ca:'blr',
+             pa:'delhi',
+             getAdd:function()
+             {
+                 function a()
+                 {
+                    console.log(this)
+                 }
+                 a()
+             }
+        }
+      }
+      obj.add.getAdd()
+     
+       
+     </script>
+</body>
+</html>
