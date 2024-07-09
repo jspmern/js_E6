@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[{id:1,name:"utsav",sub:["html","css","js"],roll:1,sal:10000},
+        {id:2,name:"vicky",sub:["html","css","js"],roll:11,sal:1000},
+        {id:5,name:"utsav",sub:["html"],roll:100,sal:100}] 
+
+       //let result= arr.filter(item=>item.sal>100)
+       //console.log(result)
+     let x=  arr.map((item)=>{
+        if(item.id==5 && item.name=="utsav")
+        {
+           let text="utsav jha"
+           return {
+            //spread
+               ... item,
+
+              
+           } 
+        }
+        else{
+            return item 
+        }
+       })
+       console.log(x)
+
+     let sal=  arr.reduce((acc,item)=>acc+item.sal)
+     console.log(sal)
+    </script>
+     
+</body>
+</html>
